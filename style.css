@@ -1,0 +1,54 @@
+
+/* The sidebar menu */
+.sidenav {
+  height: 100vh; /* Full-height: remove this if you want "auto" height */
+    width: 200px; /* Set the width of the sidebar */
+    background-color: rgb(207, 174, 174); 
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  /*placeholder for a logo*/
+
+.img {
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+}
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2b2b2b;
+    display: block;
+    transition-duration: 0.3s;
+  }
+  .section2 {
+    flex: 1;
+    align-items: flex-end;
+    display: flex;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color:#2b2bb2;
+  }
+
+  .avatar {
+    width: 100px;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 160px;
+    padding: 0px 10px;
+    display: flex;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
